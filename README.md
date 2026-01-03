@@ -11,7 +11,7 @@
 
 ## 📸 Project Demonstration
 *(Add a screenshot of your running application here)*
-![App Screenshot](assets/app_screenshot.png)
+![App Screenshot](images/app.png)
 
 ---
 
@@ -24,7 +24,7 @@ To "see" the image, we utilize **ResNet50 (Residual Network)**, a deep convoluti
 * **Function:** It processes the raw pixel data and extracts a high-dimensional feature map (2048-dimensional vectors).
 * **Why ResNet?** It solves the vanishing gradient problem, allowing for deeper networks that capture intricate details like texture, shape, and spatial relationships.
 
-![ResNet Architecture](assets/resnet.png)
+![ResNet Architecture](images/resnet.webp)
 
 
 ### 2. The Textual Pipeline (Transformer Models)
@@ -32,7 +32,7 @@ To "read" the question, we employ **BERT (Bidirectional Encoder Representations 
 * **Function:** It tokenizes the input question and converts it into dense word embeddings.
 * **Why BERT?** Unlike directional models (RNNs), BERT reads the entire sentence at once, allowing it to understand context and nuance (e.g., distinguishing "bank" of a river from "bank" for money).
 
-![BERT Architecture](assets/bert.png)
+![BERT Architecture](images/bert-architecture.png)
 
 
 ### 3. Multimodal Fusion (The "Brain")
@@ -41,7 +41,7 @@ This is the critical phase where vision meets language.
 2.  **Fusion Mechanism:** We utilize element-wise multiplication (Hadamard product) or concatenation to fuse the vectors.
 3.  **Classification:** The fused vector is passed through a fully connected layer (Classifier) to predict the most probable answer from the vocabulary.
 
-![VQA Architecture](assets/vqa_arch.png)
+![VQA Architecture](images/vqq.png)
 
 
 ---
